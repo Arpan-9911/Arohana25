@@ -2,16 +2,12 @@
 
 *{
   scroll-behavior: smooth;
-  color-scheme: dark;
 }
 
-body{
-  background-color: rgb(5, 9, 23);
-}
 
 svg path {
   fill: transparent;
-  stroke: #fff;
+  stroke: #000;
   stroke-width: 0.5;
   stroke-dasharray: 200; /* Adjust based on path length */
   stroke-dashoffset: 200;
@@ -28,10 +24,10 @@ svg path {
   }
   80% {
     stroke-dashoffset: 0;
-    fill: #fff;
+    fill: #000;
   }
   100% {
     stroke-dashoffset: 0;
-    fill: #fff;
+    fill: #000;
   }
 }

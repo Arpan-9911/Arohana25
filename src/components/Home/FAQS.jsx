@@ -15,14 +15,14 @@ const FAQS = () => {
         {faqsData.map((faq, index) => (
           <div
             key={index}
-            className="border border-gray-700 rounded-lg p-4 cursor-pointer bg-gray-900 text-white"
+            className="border border-gray-700 rounded-lg p-4 cursor-pointer bg-gray-200"
             onClick={() => toggleFAQ(index)}
           >
             <div className="flex justify-between items-center">
               <h2 className="text-lg font-semibold">{faq.question}</h2>
               {openIndex === index ? <FiChevronUp size={20} /> : <FiChevronDown size={20} />}
             </div>
-            {openIndex === index && <p className="mt-2 text-gray-400">{faq.answer}</p>}
+            {openIndex === index && <p className="mt-2 text-gray-600">{faq.answer}</p>}
           </div>
         ))}
       </div>

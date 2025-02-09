@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
-    <footer className="px-4 py-10 bg-gray-800">
+    <footer className="px-4 py-10 bg-gray-300">
       <div className="max-w-7xl mx-auto flex sm:flex-row flex-col justify-between gap-10">
         <div className="flex-1">
           <Link
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-10">
-        <p className="text-sm text-gray-400">
+        <p className="text-sm">
           &copy; 2024 Hyperion&trade;. All rights reserved.
         </p>
       </div>

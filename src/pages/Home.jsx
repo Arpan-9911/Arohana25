@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <div>
-        <div className="hero-section min-h-screen">
+        <div
+          className="hero-section sm:min-h-[80vh] min-h-[70vh] flex justify-between items-center"
+        >
           <HeroSection />
         </div>
         <div className="aboutUs mt-20">
