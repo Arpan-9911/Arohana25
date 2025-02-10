@@ -38,8 +38,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`w-full p-4 fixed top-0 z-20 transition-all duration-300
-      ${scrolled ? "bg-white shadow" : "bg-transparent"}
+    <nav className={`w-full p-4 fixed top-0 z-20 bg-white transition-all duration-200
+      ${toggle ? '' : scrolled ? "shadow" : "opacity-90"}
     `}>
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center gap-6">
@@ -74,7 +74,7 @@ const Navbar = () => {
             {toggle ? <RxCross2 size={30} /> : <FiMenu size={30} />}
           </button>
           {toggle && (
-            <div className="absolute flex flex-col gap-10 top-16 left-0 w-full transition-all h-screen bg-[#c0c0c0] z-50 py-4 px-6">
+            <div className="absolute border-t flex flex-col gap-10 top-16 left-0 w-full transition-all h-screen bg-white z-50 py-4 px-6">
               <div className="flex flex-col">
                 {navLinks.map((link) => (
                   <Link

@@ -4,6 +4,12 @@
   scroll-behavior: smooth;
 }
 
+.diagonal-div::before{
+  content: "";
+  position: absolute;
+  border-right: 100px solid transparent;
+  border-bottom: 100vh solid #fce8f4;
+}
 
 svg path {
   fill: transparent;
@@ -29,5 +35,16 @@ svg path {
   100% {
     stroke-dashoffset: 0;
     fill: #000;
+  }
+}
+
+@media (width < 64rem) {
+  .diagonal-div::before{
+    content: "";
+    position: absolute;
+    border-bottom: none;
+    border-top: 50px solid transparent;
+    border-right: 100vw solid #fce8f4;
+    bottom: 0px;
   }
 }

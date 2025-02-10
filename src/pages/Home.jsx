@@ -4,17 +4,15 @@ import HeroSection from '../components/Home/HeroSection'
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-pink-100 pb-20">
       <div>
-        <div
-          className="hero-section sm:min-h-[80vh] min-h-[70vh] flex justify-between items-center"
-        >
+        <div className="hero-section">
           <HeroSection />
         </div>
-        <div className="aboutUs mt-20">
+        <div className="aboutUs mt-20 max-w-7xl mx-auto px-4 xl:px-0">
           <AboutUs />
         </div>
-        <div className="faqs mt-20">
+        <div className="faqs mt-20 max-w-7xl mx-auto px-4 xl:px-0">
           <FAQS />
         </div>
       </div>

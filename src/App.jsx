@@ -26,7 +26,7 @@ const App = () => {
   ) : (
     <BrowserRouter>
       <Navbar />
-      <div className="py-20 max-w-7xl mx-auto px-4 xl:px-0">
+      <div className="">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<Events />} />
